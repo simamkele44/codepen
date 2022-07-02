@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+.top-pane {
+  background-color: #151515;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.pane {
+  height: 5vh;
+  display: flex;
+}
+
+.top-pane {
+  height: 95vh;
+}
+
+.btns_container {
+  background-color: #151515;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  color: #ffffff;
+
+
+
+}
+
+.top_panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+}
+
+.scan_icon {
+  margin-right: 10px;
+}
+
+.heart_icon {
+  margin-left: 10px;
+}
+
+.git_icon {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.git_icon_container {
+  cursor: pointer;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+  border: 1px solid #343434;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #151515;
+  color: white;
+  padding: 0.7rem 0.7rem 0.7rem 1.1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  border-bottom: 1px solid #343434;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.editor-subtitle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #343434;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  
+}
+
+.editor-subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #151515;
+  color: white;
+  padding: 0.7rem 0.7rem 0.7rem 1.1rem;
+  font-size: 14px;
+  font-style: italic;
+  margin-right: 6px;
+  border-bottom: 1px solid #6cc7f6;
+  border-right: 1px solid #343434;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.lang_icon {
+  margin-right: 8px;
+  color: #f54336;
+}
+
+.rvmfile_btn {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.ts_icon {
+  color: #3178C6;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.cm-s-material.CodeMirror {
+  background-color: #151515!important;
+}
+
+.cm-s-material .CodeMirror-gutters {
+  background: #151515!important;
+}
