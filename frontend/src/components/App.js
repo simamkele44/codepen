@@ -40,7 +40,7 @@ function App() {
           <AiFillHeart className="heart_icon"/>
         </div>
         <div className="top_panel">
-        <a href={`https://google.com`} className="git_icon_container" target='_blank'><BsGithub className="git_icon"/></a>
+        <a href={`https://github.com/simamkele44/codepen`} className="git_icon_container" target='_blank'><BsGithub className="git_icon"/></a>
           
         </div>
       </div>
