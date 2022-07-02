@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2ex=0j82+wnz5e40n!(4x2@!p22n*6i6nc^j5sx8ev@8fpt0fz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['143.198.180.126','scannercodepen.online', 'www.scannercodepen.online', '127.0.0.1']
+ALLOWED_HOSTS = ['161.35.110.244','scannercodepen.online', 'www.scannercodepen.online', '127.0.0.1']
 
 
 # Application definition
