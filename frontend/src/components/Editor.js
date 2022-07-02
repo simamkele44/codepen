@@ -326,7 +326,7 @@ export default function Editor(props) {
         attr_type = "boolean"
       }
 
-      let attr_line = "   "+attr_type+": "+attr_name+";"+"\r\n";
+      let attr_line = "   "+attr_name+": "+attr_type+";"+"\r\n";
 
       final_attrs = final_attrs+attr_line;
       
