@@ -21,7 +21,7 @@ const Files = (props) => {
   const [files, setFiles] = useLocalStorage('filenames', ['Student.java','Node.java', 'Stack.java', 'Employee.java']);
 
 
-  const [fn_value, setFnValue] = useState("");
+  const [fn_value, setFnValue] = useState(``);
 
 
 
@@ -83,7 +83,7 @@ const Files = (props) => {
                     <FileName>
                       <AiFillFile/>
                       <input type="text" value={fn_value} onChange={e => {
-                        setFnValue(e.target.value);
+                        setFnValue(`${e.target.value}`);
                         }} onBlur={() => {
                           
                           if(fn_value<1){

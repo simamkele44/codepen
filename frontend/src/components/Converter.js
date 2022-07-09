@@ -63,9 +63,23 @@ export const findVariables = (java_code) =>{
         let temp_obj = {}
         for(let i=0; i<variable_arr.length-1; i++){
             let variable_line = variable_arr[i].split(" ");
-            temp_obj[variable_line[variable_line.length-1]] = {
-                data_type: variable_line[variable_line.length-2]
-            };
+            let arrlist_type = variable_line[variable_line.length-2];
+            var ds_type = arrlist_type.substring(
+                arrlist_type.indexOf("<") + 1, 
+                arrlist_type.lastIndexOf(">")
+            );
+
+            // Detect data structures
+            if(arrlist_type.includes("ArrayList")) {
+                temp_obj[variable_line[variable_line.length-1]] = {
+                    data_type: ds_type+"[]"
+                };
+            }else{
+                temp_obj[variable_line[variable_line.length-1]] = {
+                    data_type: variable_line[variable_line.length-2]
+                };
+            }
+
         }
     
         return temp_obj;
